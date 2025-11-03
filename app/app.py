@@ -6,7 +6,6 @@ import json
 
 app = Flask(__name__)
 
-# In-memory storage for demo
 tasks = [
     {'id': 1, 'title': 'Deploy to Kubernetes', 'completed': True},
     {'id': 2, 'title': 'Set up CI/CD', 'completed': True},

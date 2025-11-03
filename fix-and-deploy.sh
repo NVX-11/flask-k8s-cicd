@@ -64,7 +64,7 @@ EOF
 kubectl apply -f /tmp/deployment-simple.yaml
 kubectl apply -f k8s/service.yaml
 
-# Wait and check
+
 echo ""
 echo "Waiting for pod to start..."
 sleep 10
@@ -89,7 +89,7 @@ kubectl wait --for=condition=ready pod -l app=flask-app --timeout=60s || {
 
 echo ""
 echo "=========================================="
-echo "✅ Success!"
+echo " Success"
 echo "=========================================="
 
 URL=$(minikube service flask-app-service --url)

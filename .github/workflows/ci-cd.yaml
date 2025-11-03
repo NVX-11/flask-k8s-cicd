@@ -96,9 +96,9 @@ jobs:
 
     - name: Deploy notification
       run: |
-        echo "✅ Docker image built and pushed successfully!"
-        echo "📦 Image: ${{ env.DOCKER_IMAGE }}:latest"
-        echo "🚀 Ready for deployment to Kubernetes"
+        echo " Docker image built and pushed successfully!"
+        echo " Image: ${{ env.DOCKER_IMAGE }}:latest"
+        echo " Ready for deployment to Kubernetes"
         echo ""
         echo "To deploy manually, run:"
         echo "  kubectl apply -f k8s/deployment.yaml"
